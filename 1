@@ -1,0 +1,18 @@
+// Initialize score variable
+let score = 0;
+
+// Update score every second
+setInterval(function() {
+  score += 1;
+}, 1000);
+
+// Initialize score and points per second variables
+let score = 0;
+let pps = 1;
+
+// Update score and points per second every second
+setInterval(function() {
+  score += pps;
+  document.getElementById("score").textContent = score;
+  document.getElementById("pps").textContent = pps;
+}, 1000);
